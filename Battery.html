@@ -260,7 +260,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
 .gal figure:hover img{transform:scale(1.05)}
 .gal figcaption{font-size:.85rem;color:var(--muted);padding:.7rem .9rem}
 
-/* inspection booking */
+/* phone consultation booking */
 .book{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.2rem,3vw,2.4rem);border:1px solid var(--edge);border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015));padding:clamp(1.2rem,3vw,2.2rem)}
 .cal-head{display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-bottom:1rem}
 .cal-head b{font-size:1.05rem;color:#fff;font-weight:700}
@@ -360,7 +360,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
       <a href="AirCon.html" data-cn="冷氣">Air con</a>
       <a href="./#blog" data-cn="部落格">Blog</a>
       <a href="./#contact" data-cn="聯絡我們">Contact</a>
-      <a class="btn btn-fill" href="./#book" data-cn="預約評估">Book inspection</a>
+      <a class="btn btn-fill" href="./#book" data-cn="電話諮詢">Book a call</a>
     </nav>
   </div>
 </header>
@@ -373,7 +373,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
       <h1 class="up a2" style="font-size:clamp(2.1rem,5.2vw,3.4rem)">Store the power<br>you already make.</h1>
       <p class="lede up a3" style="margin-top:.9rem">Solar sends power to the grid for a few cents. A battery keeps it for the hours you pay the most.</p>
       <div class="hero-cta up a4">
-        <a class="btn btn-fill" href="./#book">Book an inspection</a>
+        <a class="btn btn-fill" href="./#book">Book a call</a>
         <a class="btn btn-line" href="https://wa.me/61426382535" rel="noopener">WhatsApp</a>
       </div>
     </div>
@@ -492,7 +492,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
         <p style="margin-top:.8rem">Send a recent power bill and we'll size a system and quote it in writing — usually the same day.</p>
       </div>
       <div style="align-self:center">
-        <a class="btn btn-fill" href="./#book">Book an inspection</a>
+        <a class="btn btn-fill" href="./#book">Book a call</a>
         <a class="btn btn-line" href="./#contact" style="margin-left:.5rem">Send an enquiry</a>
       </div>
     </div>
@@ -512,11 +512,13 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
         <a href="./#blog">Blog</a>
         <a href="./#areas">Service areas</a>
         <a href="./#contact">Contact</a>
+        <a href="PrivacyPolicy.html">Privacy Policy</a>
+        <a href="TermsConditions.html">Terms &amp; Conditions</a>
         <a href="https://www.instagram.com/batteryplant.victoria" rel="noopener">Instagram</a>
         <a href="https://www.youtube.com/@batteryplant.victoria" rel="noopener">YouTube</a>
       </nav>
     </div>
-    <p class="legal">© <span id="yr">2026</span> Battery Plant · 203 Blackburn Rd, Mount Waverley VIC 3149 · Solar, battery storage and air conditioning</p>
+    <p class="legal">© <span id="yr">2026</span> Battery Plant Victoria Pty Ltd · ABN 92 692 378 993 · 203 Blackburn Rd, Mount Waverley VIC 3149 · Solar, battery storage and air conditioning</p>
   </div>
 </footer>
 
@@ -612,7 +614,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
 
   var wc = document.getElementById("wcBtn");
   if(wc) wc.addEventListener("click", function(){
-    var id = "0426 382 535";
+    var id = "+61 426 382 535";
     if(navigator.clipboard) navigator.clipboard.writeText(id);
     var t = document.createElement("div");
     t.className = "toast"; t.textContent = "WeChat ID " + id + " copied";
@@ -746,7 +748,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
         .then(function(){ form.reset(); note.style.color = "#1BD45F"; note.textContent = "Request sent — we'll confirm by message shortly."; })
         .catch(function(){ note.style.color = "#FF8A80"; note.textContent = "That didn't send. Please message us on WhatsApp."; });
     } else {
-      var m = "Site inspection request"
+      var m = "Phone consultation request"
         + "%0ADate: " + encodeURIComponent(label())
         + "%0ATime: " + encodeURIComponent(chosenSlot)
         + "%0AName: " + encodeURIComponent(g("name"))

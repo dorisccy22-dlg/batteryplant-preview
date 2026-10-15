@@ -257,7 +257,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
 .list li::before{content:"";position:absolute;left:0;top:.95rem;width:8px;height:8px;border-radius:50%;background:var(--green)}
 .gal figure{margin:0;background:#0A1E2C;border:1px solid var(--edge);border-radius:18px;overflow:hidden;background:#0A1E2C}
 
-/* inspection booking */
+/* phone consultation booking */
 .book{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.2rem,3vw,2.4rem);border:1px solid var(--edge);border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015));padding:clamp(1.2rem,3vw,2.2rem)}
 .cal-head{display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-bottom:1rem}
 .cal-head b{font-size:1.05rem;color:#fff;font-weight:700}
@@ -343,7 +343,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
       <a href="AirCon.html" data-cn="冷氣">Air con</a>
       <a href="#blog" data-cn="部落格">Blog</a>
       <a href="#contact" data-cn="聯絡我們">Contact</a>
-      <a class="btn btn-fill" href="#book" data-cn="預約評估">Book inspection</a>
+      <a class="btn btn-fill" href="#book" data-cn="電話諮詢">Book a call</a>
     </nav>
   </div>
 </header>
@@ -359,7 +359,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
       <p class="lede up a3" data-cn="太陽能・家用電池・冷氣空調　墨爾本在地安裝團隊">Solar, batteries and air conditioning, installed across Melbourne.</p>
       <div class="hero-cta up a4">
         <a class="btn btn-fill" href="#contact" data-cn="免費報價">Free quote</a>
-        <a class="btn btn-line" href="#book">Book an inspection</a>
+        <a class="btn btn-line" href="#book">Book a call</a>
       </div>
       <p class="addr up a5">203 Blackburn Rd, Mount Waverley VIC 3149</p>
     </div>
@@ -424,7 +424,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
 <!-- WHY -->
 <section id="why">
   <div class="shell">
-    <div class="head rv"><h2 data-cn="為什麼選我們">Why Battery Plant</h2><a class="btn btn-line" href="#book">Book an inspection</a></div>
+    <div class="head rv"><h2 data-cn="為什麼選我們">Why Battery Plant</h2><a class="btn btn-line" href="#book">Book a call</a></div>
     <div class="ticks" style="max-width:none;margin-top:0">
       <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.6 14.2 7 21.5l5-2.9 5 2.9-1.6-7.3"/></svg>12+ years in Victoria</div>
       <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.4 1.7 2.9-.2.9 2.8 2.3 1.8-1.2 2.7 1.2 2.7-2.3 1.8-.9 2.8-2.9-.2L12 21l-2.4-1.7-2.9.2-.9-2.8-2.3-1.8 1.2-2.7-1.2-2.7 2.3-1.8.9-2.8 2.9.2z"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4"/></svg>Licensed installers</div>
@@ -441,7 +441,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
   <div class="shell">
     <div class="head rv">
       <h2 data-cn="流程">How it works</h2>
-      <a class="btn btn-line" href="#book">Book an inspection</a>
+      <a class="btn btn-line" href="#book">Book a call</a>
     </div>
     <div class="steps">
       <div class="step rv"><b>Send your bill</b><span>We read your usage and tariff, not just your roof.</span></div>
@@ -565,7 +565,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
   <div class="shell">
     <div class="head rv">
       <h2 data-cn="部落格">Straight answers</h2>
-      <a class="btn btn-line" href="#book">Book an inspection</a>
+      <a class="btn btn-line" href="#book">Book a call</a>
     </div>
     <div class="posts">
       <article class="post rv">
@@ -621,11 +621,11 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
   </div>
 </section>
 
-<!-- BOOK AN INSPECTION -->
+<!-- BOOK A PHONE CONSULTATION -->
 <section id="book" style="padding-top:0">
   <div class="shell">
     <div class="head rv">
-      <h2 data-cn="預約現場評估">Book a site inspection</h2>
+      <h2 data-cn="預約電話諮詢">Book a phone consultation</h2>
       <a class="btn btn-line" href="https://wa.me/61426382535" rel="noopener">Rather just message?</a>
     </div>
     <div class="book rv">
@@ -638,8 +638,8 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
           </div>
         </div>
         <div class="cal-dow" aria-hidden="true"><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span></div>
-        <div class="cal-grid" id="calGrid" role="group" aria-label="Choose an inspection date"></div>
-        <p class="cal-note">Mon–Sat, up to 8 weeks ahead. Visits take about 30 minutes.</p>
+        <div class="cal-grid" id="calGrid" role="group" aria-label="Choose a date for your call"></div>
+        <p class="cal-note">Mon–Sat, up to 8 weeks ahead. Calls take about 15 minutes.</p>
       </div>
 
       <div>
@@ -657,12 +657,12 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
             <div><label for="bname">Name</label><input id="bname" name="name" type="text" autocomplete="name" required></div>
             <div><label for="bphone">Mobile</label><input id="bphone" name="phone" type="tel" autocomplete="tel" required></div>
           </div>
-          <label for="baddr">Site address</label>
-          <input id="baddr" name="address" type="text" autocomplete="street-address" placeholder="Street, suburb">
+          <label for="baddr">Suburb</label>
+          <input id="baddr" name="address" type="text" autocomplete="address-level2" placeholder="Where the system would go">
           <label for="bnote">Anything we should know</label>
           <input id="bnote" name="note" type="text" placeholder="Single or three phase, existing solar, roof type…">
-          <button class="btn btn-fill" type="submit">Request this time</button>
-          <p class="note" id="bookNote">We confirm every booking by message first — nothing is locked in until we reply.</p>
+          <button class="btn btn-fill" type="submit">Request this call</button>
+          <p class="note" id="bookNote">We confirm every call by message first — nothing is locked in until we reply.</p>
         </form>
       </div>
     </div>
@@ -677,9 +677,9 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
         <h2 data-cn="免費報價">Free quote</h2>
         <p style="margin-top:.8rem">Send your details and a recent power bill. Fixed price back, usually same day.</p>
         <ul class="clist">
-          <li><b>WhatsApp</b><a href="https://wa.me/61426382535" rel="noopener">0426 382 535</a></li>
-          <li><b>WeChat</b><span>0426 382 535</span></li>
-          <li><b>Phone</b><a href="tel:+61426382535">0426 382 535</a></li>
+          <li><b>WhatsApp</b><a href="https://wa.me/61426382535" rel="noopener">+61 426 382 535</a></li>
+          <li><b>WeChat</b><span>+61 426 382 535</span></li>
+          <li><b>Phone</b><a href="tel:+61426382535">+61 426 382 535</a></li>
           <li><b>Email</b><a href="mailto:info@batteryplant.com.au">info@batteryplant.com.au</a></li>
           <li><b>Address</b><span>203 Blackburn Rd, Mount Waverley VIC 3149</span></li>
           <li><b>Instagram</b><a href="https://www.instagram.com/batteryplant.victoria" rel="noopener">batteryplant.victoria</a></li>
@@ -773,11 +773,13 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
         <a href="#blog">Blog</a>
         <a href="#areas">Service areas</a>
         <a href="#contact">Contact</a>
+        <a href="PrivacyPolicy.html">Privacy Policy</a>
+        <a href="TermsConditions.html">Terms &amp; Conditions</a>
         <a href="https://www.instagram.com/batteryplant.victoria" rel="noopener">Instagram</a>
         <a href="https://www.youtube.com/@batteryplant.victoria" rel="noopener">YouTube</a>
       </nav>
     </div>
-    <p class="legal">© <span id="yr">2026</span> Battery Plant · 203 Blackburn Rd, Mount Waverley VIC 3149 · Solar, battery storage and air conditioning</p>
+    <p class="legal">© <span id="yr">2026</span> Battery Plant Victoria Pty Ltd · ABN 92 692 378 993 · 203 Blackburn Rd, Mount Waverley VIC 3149 · Solar, battery storage and air conditioning</p>
   </div>
 </footer>
 
@@ -875,7 +877,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
 
   var wc = document.getElementById("wcBtn");
   if(wc) wc.addEventListener("click", function(){
-    var id = "0426 382 535";
+    var id = "+61 426 382 535";
     if(navigator.clipboard) navigator.clipboard.writeText(id);
     var t = document.createElement("div");
     t.className = "toast"; t.textContent = "WeChat ID " + id + " copied";
@@ -1009,7 +1011,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
         .then(function(){ form.reset(); note.style.color = "#1BD45F"; note.textContent = "Request sent — we'll confirm by message shortly."; })
         .catch(function(){ note.style.color = "#FF8A80"; note.textContent = "That didn't send. Please message us on WhatsApp."; });
     } else {
-      var m = "Site inspection request"
+      var m = "Phone consultation request"
         + "%0ADate: " + encodeURIComponent(label())
         + "%0ATime: " + encodeURIComponent(chosenSlot)
         + "%0AName: " + encodeURIComponent(g("name"))
