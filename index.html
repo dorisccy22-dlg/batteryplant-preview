@@ -62,7 +62,7 @@ p{margin:0;color:var(--muted);max-width:44ch}
 a{color:inherit}
 img{max-width:100%;height:auto;display:block}
 .shell{width:var(--shell);margin-inline:auto}
-section{padding:clamp(3.4rem,8vw,6.5rem) 0}
+section{padding:clamp(2rem,4.2vw,3.4rem) 0}
 .skip{position:absolute;left:-999px}
 .skip:focus{left:1rem;top:1rem;z-index:99;background:#fff;color:#000;padding:.6rem 1rem;border-radius:8px}
 :focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:8px}
@@ -78,7 +78,7 @@ section{padding:clamp(3.4rem,8vw,6.5rem) 0}
 .mark{display:inline-block;background:var(--logo) center/contain no-repeat;flex:none}
 .brand .mark{width:34px;height:34px}
 footer .brand .mark{width:28px;height:28px}
-.nav{margin-left:auto;display:flex;align-items:center;gap:1.6rem}
+.nav{margin-left:auto;display:flex;align-items:center;gap:1.15rem}
 .nav a{white-space:nowrap;font-size:.92rem;font-weight:500;color:#C6D6DC;text-decoration:none;transition:color .25s}
 .nav a:hover{color:#fff}
 .burger{display:none;margin-left:auto;width:42px;height:38px;border:1px solid var(--edge);border-radius:10px;background:none;cursor:pointer}
@@ -96,7 +96,7 @@ footer .brand .mark{width:28px;height:28px}
 .btn-blue:hover{transform:translateY(-2px)}
 
 /* hero */
-.hero{padding-top:clamp(2rem,5vw,4rem);padding-bottom:clamp(2.6rem,6vw,5rem)}
+.hero{padding-top:clamp(1.2rem,3vw,2.2rem);padding-bottom:clamp(1.6rem,3.5vw,2.8rem)}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.6rem,4vw,3rem);align-items:center}
 .kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:600;color:var(--green);border:1px solid rgba(27,212,95,.25);background:rgba(27,212,95,.07);padding:.3rem .8rem;border-radius:999px}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2.4s infinite}
@@ -141,19 +141,20 @@ footer .brand .mark{width:28px;height:28px}
 .stat span{font-size:.82rem;color:var(--muted)}
 
 /* section head */
-.head{display:flex;justify-content:space-between;align-items:flex-end;gap:1.4rem;margin-bottom:2rem;flex-wrap:wrap}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:1.2rem;margin-bottom:1.3rem;flex-wrap:wrap}
 .head h2{flex:1 1 14rem;min-width:0}
 
 /* cards */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.grid3.four{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
 .card{position:relative;border:1px solid var(--edge);border-radius:20px;background:var(--card);padding:1.1rem;overflow:hidden;text-decoration:none;color:inherit;transition:transform .4s cubic-bezier(.2,.7,.3,1),border-color .4s,background .4s}
 .card:hover{transform:translateY(-6px);border-color:rgba(27,212,95,.4);background:rgba(27,212,95,.05)}
 .shot{border-radius:14px;overflow:hidden;background:#0A1E2C;aspect-ratio:4/3;display:grid;place-items:center}
 .shot img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.3,1)}
 .card:hover .shot img{transform:scale(1.05)}
-.card h3{margin:1rem 0 .3rem}
+.card h3{margin:.8rem 0 .3rem}
 .card p{font-size:.95rem}
-.meta{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.9rem}
+.meta{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.7rem}
 .pill{font-size:.75rem;font-weight:600;color:#B9CCD3;border:1px solid var(--edge);border-radius:999px;padding:.22rem .6rem}
 .pill.on{color:#04241A;background:var(--green);border-color:transparent}
 
@@ -161,7 +162,7 @@ footer .brand .mark{width:28px;height:28px}
 .split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.4rem,4vw,3rem);align-items:center}
 .frame{border-radius:22px;overflow:hidden;border:1px solid var(--edge)}
 .crew{width:100%;height:auto;display:block}
-.ticks{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-top:1.4rem;max-width:30rem}
+.ticks{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.7rem;margin-top:1.4rem}
 .tick{display:flex;align-items:center;gap:.55rem;font-size:.92rem;font-weight:500;color:#D2E0E5}
 .tick svg{width:26px;height:26px;flex:none;color:var(--green)}
 
@@ -190,7 +191,7 @@ footer .brand .mark{width:28px;height:28px}
 @keyframes ping{0%{transform:scale(.6);opacity:.9}70%{transform:scale(2.1);opacity:0}100%{opacity:0}}
 
 /* chips */
-.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1.3rem}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.9rem}
 .chip{font-size:.85rem;color:#C2D3D9;border:1px solid var(--edge);border-radius:999px;padding:.35rem .8rem;transition:border-color .3s,color .3s}
 .chip:hover{border-color:rgba(27,212,95,.5);color:#fff}
 
@@ -250,15 +251,11 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
 .step::before{counter-increment:st;content:counter(st);display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:linear-gradient(115deg,#1F8BFF,#1BD45F);color:#fff;font-size:.8rem;font-weight:700;margin-bottom:.8rem}
 .step b{display:block;color:#fff;font-size:1rem;margin-bottom:.2rem}
 .step span{font-size:.9rem;color:var(--muted)}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:1.6rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.1rem}
 .list{list-style:none;padding:0;margin:.8rem 0 0}
 .list li{position:relative;padding:.4rem 0 .4rem 1.5rem;font-size:.95rem;color:#C2D3D9}
 .list li::before{content:"";position:absolute;left:0;top:.95rem;width:8px;height:8px;border-radius:50%;background:var(--green)}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.6rem}
 .gal figure{margin:0;background:#0A1E2C;border:1px solid var(--edge);border-radius:18px;overflow:hidden;background:#0A1E2C}
-.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.3,1)}
-.gal figure:hover img{transform:scale(1.05)}
-.gal figcaption{font-size:.85rem;color:var(--muted);padding:.7rem .9rem}
 
 /* inspection booking */
 .book{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.2rem,3vw,2.4rem);border:1px solid var(--edge);border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.06),rgba(255,255,255,.015));padding:clamp(1.2rem,3vw,2.2rem)}
@@ -286,7 +283,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
 @media(max-width:940px){.book{grid-template-columns:1fr}}
 
 /* blog + contact */
-.pagehead{padding:clamp(2.4rem,6vw,4.4rem) 0 clamp(1.4rem,3vw,2rem)}
+.pagehead{padding:clamp(1.4rem,3vw,2.4rem) 0 clamp(1rem,2vw,1.4rem)}
 .posts{display:grid;gap:1rem}
 .post{border:1px solid var(--edge);border-radius:20px;background:var(--card);padding:clamp(1.1rem,2.6vw,1.7rem);transition:border-color .35s}
 .post:hover{border-color:rgba(27,212,95,.35)}
@@ -305,7 +302,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
 
 @media(max-width:940px){
   .hero-grid,.split,.cbox,.maparea{grid-template-columns:1fr}
-  .grid3,.grid4,.stats,.gal{grid-template-columns:1fr 1fr}
+  .grid3,.grid4,.stats{grid-template-columns:1fr 1fr}
   .steps{grid-template-columns:1fr 1fr}
   .two{grid-template-columns:1fr}
   .burger{display:block}
@@ -313,10 +310,11 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
   .nav.open{transform:none}
   .nav a{padding:.9rem 0;border-bottom:1px solid var(--edge)}
   .nav .btn{margin-top:.9rem}
-  .head{flex-direction:column;align-items:flex-start}
+  .head{flex-direction:column;align-items:flex-start;justify-content:flex-start}
+  .head h2{flex:0 0 auto;width:100%}
 }
 @media(max-width:600px){
-  .grid3,.grid4,.row,.gal,.steps{grid-template-columns:1fr}
+  .grid3,.grid4,.row,.steps{grid-template-columns:1fr}
   .stats{grid-template-columns:1fr 1fr}
   footer{padding-bottom:8rem}
   .dock .btn{padding:.55rem .85rem;font-size:.8rem}
@@ -341,6 +339,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
     <nav class="nav" id="nav" aria-label="Main">
       <a href="Solar.html" data-cn="太陽能">Solar</a>
       <a href="Battery.html" data-cn="電池">Batteries</a>
+      <a href="Inverter.html" data-cn="逆變器">Inverters</a>
       <a href="AirCon.html" data-cn="冷氣">Air con</a>
       <a href="#blog" data-cn="部落格">Blog</a>
       <a href="#contact" data-cn="聯絡我們">Contact</a>
@@ -422,108 +421,17 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
   </div>
 </div>
 
-<!-- WHAT WE INSTALL -->
-<section id="what">
-  <div class="shell">
-    <div class="head rv">
-      <h2 data-cn="我們安裝什麼">What we install</h2>
-      <a class="btn btn-line" href="#blog">Read the blog</a>
-    </div>
-    <div class="grid3">
-      <a class="card rv" href="Solar.html">
-        <div class="shot"><svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of rooftop solar panels"> <defs><linearGradient id="gs" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F8BFF"/><stop offset="1" stop-color="#1BD45F"/></linearGradient></defs><rect width="480" height="360" fill="#0A1E2C"/> <circle cx="378" cy="82" r="58" fill="#1BD45F" opacity=".12"/><circle cx="378" cy="82" r="26" fill="#F2B544" opacity=".9"/> <path d="M60 268l84-120h236l-86 120z" fill="url(#gs)" opacity=".85"/> <g stroke="#06121B" stroke-width="3" opacity=".5"><path d="M117 268l84-120M174 268l84-120M231 268l84-120M288 268l84-120"/><path d="M104 228h248M132 188h248"/></g> <path d="M60 268h234M118 268v52M236 268v52" stroke="#41708a" stroke-width="6" stroke-linecap="round" fill="none"/></svg></div>
-        <h3>Solar panels</h3>
-        <p>Covers the power you use while the sun is up.</p>
-        <div class="meta"><span class="pill on">6.6–13.2 kW</span><span class="pill">Trina</span><span class="pill">Jinko</span></div>
-      </a>
-      <a class="card rv d1" href="Battery.html">
-        <div class="shot"><svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a home battery on a wall"> <defs><linearGradient id="gb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F8BFF"/><stop offset="1" stop-color="#1BD45F"/></linearGradient></defs><rect width="480" height="360" fill="#0A1E2C"/> <g stroke="#12304a" stroke-width="1"><path d="M0 70h480M0 150h480M0 230h480M0 310h480M80 0v360M180 0v360M280 0v360M380 0v360"/></g> <ellipse cx="240" cy="180" rx="170" ry="150" fill="#1BD45F" opacity=".1"/> <rect x="158" y="52" width="164" height="256" rx="18" fill="#0F2A3C" stroke="#41708a" stroke-width="3"/> <rect x="174" y="170" width="132" height="122" rx="10" fill="url(#gb)" opacity=".85"/> <rect x="174" y="68" width="132" height="92" rx="10" fill="url(#gb)" opacity=".16"/> <circle cx="240" cy="96" r="9" fill="#1BD45F"/> <path d="M246 196l-20 38h26l-18 40" stroke="#06121B" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/></svg></div>
-        <h3>Home batteries</h3>
-        <p>Keeps your cheap power for the peak-rate hours.</p>
-        <div class="meta"><span class="pill on">5–48 kWh</span><span class="pill">SOFAR</span><span class="pill">FoxESS</span></div>
-      </a>
-      <a class="card rv d2" href="AirCon.html">
-        <div class="shot"><svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a split system air conditioner"> <defs><linearGradient id="ga" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F8BFF"/><stop offset="1" stop-color="#1BD45F"/></linearGradient></defs><rect width="480" height="360" fill="#0A1E2C"/> <g stroke="#12304a" stroke-width="1"><path d="M0 80h480M0 170h480M0 260h480M100 0v360M240 0v360M380 0v360"/></g> <rect x="96" y="74" width="288" height="86" rx="20" fill="#0F2A3C" stroke="#41708a" stroke-width="3"/> <rect x="112" y="92" width="256" height="14" rx="7" fill="#41708a" opacity=".5"/> <rect x="112" y="132" width="256" height="12" rx="6" fill="url(#ga)"/> <circle cx="348" cy="112" r="6" fill="#1BD45F"/> <g stroke="url(#ga)" stroke-width="7" stroke-linecap="round" fill="none" opacity=".75"> <path d="M150 186c0 26 14 40 14 66s-14 40-14 62"/><path d="M240 190c0 26 14 40 14 66s-14 40-14 62"/><path d="M330 186c0 26 14 40 14 66s-14 40-14 62"/></g></svg></div>
-        <h3>Air conditioning</h3>
-        <p>Split and multi-split systems, sized room by room.</p>
-        <div class="meta"><span class="pill on">2.5–20 kW</span><span class="pill">Midea</span><span class="pill">Silicon</span></div>
-      </a>
-    </div>
-  </div>
-</section>
-
-
 <!-- WHY -->
-<section>
-  <div class="shell split">
-    <div class="rv">
-      <h2 data-cn="為什麼選我們">Installed by our own crews</h2>
-      <p style="margin-top:.9rem">Designed, installed and commissioned in-house. Nothing subcontracted out.</p>
-      <div class="ticks">
-        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.6 14.2 7 21.5l5-2.9 5 2.9-1.6-7.3"/></svg>12+ years</div>
-        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.4 1.7 2.9-.2.9 2.8 2.3 1.8-1.2 2.7 1.2 2.7-2.3 1.8-.9 2.8-2.9-.2L12 21l-2.4-1.7-2.9.2-.9-2.8-2.3-1.8 1.2-2.7-1.2-2.7 2.3-1.8.9-2.8 2.9.2z"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4"/></svg>Licensed installers</div>
-        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 12h.01M18 12h.01"/></svg>Rebates handled</div>
-        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.1 5.4L19.5 10l-5.4 2.1L12 17.5 9.9 12.1 4.5 10l5.4-1.6z"/></svg>Premium brands</div>
-        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 12.6l-8 8a1.5 1.5 0 01-2.1 0L3 13V4.5A1.5 1.5 0 014.5 3H13l7.6 7.6a1.4 1.4 0 010 2z"/><circle cx="7.6" cy="7.6" r="1.5"/></svg>Fixed pricing</div>
-        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Local support</div>
-      </div>
-    </div>
-    <div class="frame rv d1">
-      <svg class="crew" viewBox="0 0 640 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of two Battery Plant installers fitting a home battery and inverter on a garage wall">
-      <defs>
-        <linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F8BFF"/><stop offset="1" stop-color="#1BD45F"/></linearGradient>
-        <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0D2434"/><stop offset="1" stop-color="#081B27"/></linearGradient>
-        <radialGradient id="lamp"><stop offset="0" stop-color="#1BD45F" stop-opacity=".2"/><stop offset="1" stop-color="#1BD45F" stop-opacity="0"/></radialGradient>
-      </defs>
-      <rect width="640" height="460" fill="url(#wall)"/>
-      <g stroke="#12304a" stroke-width="1" opacity=".8">
-        <path d="M0 60h640M0 120h640M0 180h640M0 240h640M0 300h640M0 360h640"/>
-        <path d="M80 0v376M160 0v376M240 0v376M320 0v376M400 0v376M480 0v376M560 0v376"/>
-      </g>
-      <ellipse cx="450" cy="240" rx="230" ry="210" fill="url(#lamp)"/>
-      <rect y="376" width="640" height="84" fill="#06121B"/>
-      <path d="M0 376h640" stroke="#1BD45F" stroke-opacity=".35" stroke-width="2"/>
-      
-      <g>
-        <rect x="396" y="92" width="130" height="198" rx="14" fill="#0F2A3C" stroke="#41708a" stroke-width="2.5"/>
-        <rect x="408" y="186" width="106" height="90" rx="8" fill="url(#cg)" opacity=".8"/>
-        <rect x="408" y="108" width="106" height="74" rx="8" fill="url(#cg)" opacity=".15"/>
-        <circle cx="461" cy="128" r="7" fill="#1BD45F"/>
-        <rect x="546" y="128" width="68" height="92" rx="10" fill="#0F2A3C" stroke="#41708a" stroke-width="2.5"/>
-        <path d="M572 148l-12 22h16l-10 22" stroke="#1BD45F" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M526 174h20M461 290v40" stroke="#41708a" stroke-width="3"/>
-      </g>
-      
-        <ellipse cx="322" cy="376" rx="42" ry="7" fill="#000" opacity=".28"/>
-        <path d="M311 264L307 368" stroke="#12303f" stroke-width="20" stroke-linecap="round" fill="none"/>
-        <path d="M333 264L339 368" stroke="#0F2734" stroke-width="20" stroke-linecap="round" fill="none"/>
-        <path d="M299 196q0 -10 10 -10h26q10 0 10 10l4 74q0 8 -9 8h-36q-9 0 -9 -8z" fill="#173d50"/>
-        <path d="M301 198h14l7 12 7 -12h14l4 68 h-50z" fill="#1BD45F"/>
-        <path d="M301 230h50" stroke="#0e9c58" stroke-width="5"/>
-        <path d="M302 204l-26 40 6 34" stroke="#173d50" stroke-width="15" stroke-linecap="round" fill="none"/><path d="M342 202l40 -22 26 -30" stroke="#173d50" stroke-width="15" stroke-linecap="round" fill="none"/>
-        <circle cx="322" cy="176" r="16" fill="#2f5e74"/>
-        <path d="M304 172a17 17 0 0134 0z" fill="#1F8BFF"/>
-        <path d="M299 172h34" stroke="#1F8BFF" stroke-width="6" stroke-linecap="round"/>
-        <g transform="translate(378 146) rotate(-26)"><rect x="0" y="0" width="36" height="17" rx="5" fill="#F2B544"/><rect x="9" y="15" width="14" height="20" rx="4" fill="#0E2B3B"/><path d="M36 8.5h18" stroke="#cfd9de" stroke-width="4" stroke-linecap="round"/></g>
-        <ellipse cx="196" cy="396" rx="42" ry="7" fill="#000" opacity=".28"/>
-        <path d="M185 284L181 388" stroke="#12303f" stroke-width="20" stroke-linecap="round" fill="none"/>
-        <path d="M207 284L213 388" stroke="#0F2734" stroke-width="20" stroke-linecap="round" fill="none"/>
-        <path d="M173 216q0 -10 10 -10h26q10 0 10 10l4 74q0 8 -9 8h-36q-9 0 -9 -8z" fill="#173d50"/>
-        <path d="M175 218h14l7 12 7 -12h14l4 68 h-50z" fill="#1BD45F"/>
-        <path d="M175 250h50" stroke="#0e9c58" stroke-width="5"/>
-        <path d="M176 224l-20 36 22 12" stroke="#173d50" stroke-width="15" stroke-linecap="round" fill="none"/><path d="M216 224l20 34 -20 14" stroke="#173d50" stroke-width="15" stroke-linecap="round" fill="none"/>
-        <circle cx="196" cy="196" r="16" fill="#2f5e74"/>
-        <path d="M178 192a17 17 0 0134 0z" fill="#1F8BFF"/>
-        <path d="M173 192h34" stroke="#1F8BFF" stroke-width="6" stroke-linecap="round"/>
-        <rect x="170" y="262" width="52" height="34" rx="5" fill="#0F2A3C" stroke="#1BD45F" stroke-width="2"/><path d="M178 288l10 -15 8 9 7 -12 10 18z" fill="#1BD45F" opacity=".85"/>
-      
-      <circle cx="282" cy="278" r="7" fill="#2f5e74"/><circle cx="408" cy="150" r="7" fill="#2f5e74"/><circle cx="178" cy="272" r="7" fill="#2f5e74"/><circle cx="216" cy="272" r="7" fill="#2f5e74"/>
-      <g>
-        <rect x="78" y="336" width="74" height="42" rx="6" fill="#0F2A3C" stroke="#41708a" stroke-width="2"/>
-        <path d="M98 336v-10h34v10" stroke="#41708a" stroke-width="4" fill="none"/>
-        <path d="M78 354h74" stroke="#41708a" stroke-width="2"/>
-      </g>
-      </svg>
+<section id="why">
+  <div class="shell">
+    <div class="head rv"><h2 data-cn="為什麼選我們">Why Battery Plant</h2><a class="btn btn-line" href="#book">Book an inspection</a></div>
+    <div class="ticks" style="max-width:none;margin-top:0">
+      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.6 14.2 7 21.5l5-2.9 5 2.9-1.6-7.3"/></svg>12+ years in Victoria</div>
+      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.4 1.7 2.9-.2.9 2.8 2.3 1.8-1.2 2.7 1.2 2.7-2.3 1.8-.9 2.8-2.9-.2L12 21l-2.4-1.7-2.9.2-.9-2.8-2.3-1.8 1.2-2.7-1.2-2.7 2.3-1.8.9-2.8 2.9.2z"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4"/></svg>Licensed installers</div>
+      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 12h.01M18 12h.01"/></svg>Rebates handled</div>
+      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.1 5.4L19.5 10l-5.4 2.1L12 17.5 9.9 12.1 4.5 10l5.4-1.6z"/></svg>Premium brands</div>
+      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 12.6l-8 8a1.5 1.5 0 01-2.1 0L3 13V4.5A1.5 1.5 0 014.5 3H13l7.6 7.6a1.4 1.4 0 010 2z"/><circle cx="7.6" cy="7.6" r="1.5"/></svg>Fixed pricing</div>
+      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>Local support</div>
     </div>
   </div>
 </section>
@@ -557,25 +465,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
       <div class="price rv d1"><b>Solar panels</b><em>STCs</em><span>Certificates traded for you and taken straight off the quote.</span></div>
       <div class="price rv d2"><b>Air conditioning</b><em>VEU</em><span>Victorian energy upgrade discounts on eligible replacements.</span></div>
     </div>
-    <div class="two">
-      <div class="rv">
-        <h3>What we handle</h3>
-        <ul class="list">
-          <li>Checking which programs you currently qualify for</li>
-          <li>Deducting the rebate before you pay anything</li>
-          <li>Lodging the forms and evidence on your behalf</li>
-        </ul>
-      </div>
-      <div class="rv d1">
-        <h3>Paying over time</h3>
-        <ul class="list">
-          <li>Payment plans available on solar, battery and air conditioning</li>
-          <li>Ask us for example repayments on the system you're considering</li>
-          <li>No cost to get the numbers — we'll put them in the quote</li>
-        </ul>
-      </div>
-    </div>
-    <p class="rv" style="margin-top:1.2rem;font-size:.85rem">Rebate amounts, eligibility and deadlines are set by government programs and change from year to year. We confirm what applies to your property in writing before you sign anything.</p>
+        <p class="rv" style="margin-top:1.2rem;font-size:.85rem">Rebate amounts, eligibility and deadlines are set by government programs and change from year to year. We confirm what applies to your property in writing before you sign anything.</p>
   </div>
 </section>
 
@@ -592,44 +482,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
       <div class="price rv d2"><b>FoxESS · single phase</b><em>$3,999</em><span>13.92 kWh · 5 kW inverter</span></div>
       <div class="price rv d3"><b>FoxESS · three phase</b><em>$4,999</em><span>13.92 kWh · 10 kW inverter</span></div>
     </div>
-    <div class="two">
-      <div class="rv">
-        <h3>Included in every install</h3>
-        <ul class="list">
-          <li>System design and sizing from your own usage</li>
-          <li>Accredited installation and switchboard work</li>
-          <li>Grid application and paperwork</li>
-          <li>Commissioning, monitoring app and handover</li>
-          <li>Warranty registration</li>
-        </ul>
-      </div>
-      <div class="rv d1">
-        <h3>Things that can cost extra</h3>
-        <ul class="list">
-          <li>Switchboard or meter upgrades</li>
-          <li>Long cable runs or difficult access</li>
-          <li>Tile, slate or asbestos roofing</li>
-          <li>Backup circuits for blackout protection</li>
-          <li>Three phase equipment where required</li>
-        </ul>
-      </div>
-    </div>
     <p class="rv" style="margin-top:1.2rem;font-size:.85rem">Fully installed, metro Melbourne. Starting prices only — your final price depends on system size, switchboard condition, meter type and access. Quoted in writing before any work begins.</p>
-  </div>
-</section>
-
-<!-- OUR WORK -->
-<section id="work">
-  <div class="shell">
-    <div class="head rv">
-      <h2 data-cn="實際安裝">Our work</h2>
-      <a class="btn btn-line" href="https://www.youtube.com/@batteryplant.victoria" rel="noopener">Watch installs on YouTube</a>
-    </div>
-    <div class="gal">
-      <figure class="rv"><svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Solar panels installed on a Melbourne roof"> <defs><linearGradient id="gw1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F8BFF"/><stop offset="1" stop-color="#1BD45F"/></linearGradient></defs> <rect width="480" height="360" fill="#0A1E2C"/> <g stroke="#12304a" stroke-width="1"><path d="M0 90h480M0 180h480M0 270h480M120 0v360M240 0v360M360 0v360"/></g> <ellipse cx="240" cy="180" rx="200" ry="160" fill="#1BD45F" opacity=".08"/><path d="M70 250l80-110h220l-82 110z" fill="url(#gw1)" opacity=".8"/><g stroke="#06121B" stroke-width="3" opacity=".45"><path d="M125 250l80-110M180 250l80-110M235 250l80-110M290 250l80-110"/><path d="M112 212h236M140 176h236"/></g><path d="M40 286h400" stroke="#1BD45F" stroke-opacity=".4" stroke-width="2"/></svg><figcaption>Rooftop solar, Melbourne metro</figcaption></figure>
-      <figure class="rv d1"><svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Home battery and inverter mounted on a garage wall"> <defs><linearGradient id="gw2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F8BFF"/><stop offset="1" stop-color="#1BD45F"/></linearGradient></defs> <rect width="480" height="360" fill="#0A1E2C"/> <g stroke="#12304a" stroke-width="1"><path d="M0 90h480M0 180h480M0 270h480M120 0v360M240 0v360M360 0v360"/></g> <ellipse cx="240" cy="180" rx="200" ry="160" fill="#1BD45F" opacity=".08"/><rect x="128" y="76" width="130" height="200" rx="14" fill="#0F2A3C" stroke="#41708a" stroke-width="3"/><rect x="142" y="168" width="102" height="94" rx="8" fill="url(#gw2)" opacity=".85"/><circle cx="193" cy="110" r="8" fill="#1BD45F"/><rect x="286" y="110" width="70" height="96" rx="10" fill="#0F2A3C" stroke="#41708a" stroke-width="3"/><path d="M314 132l-12 24h16l-10 24" stroke="#1BD45F" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M258 158h28" stroke="#41708a" stroke-width="3"/><path d="M40 286h400" stroke="#1BD45F" stroke-opacity=".4" stroke-width="2"/></svg><figcaption>Battery and inverter, garage wall</figcaption></figure>
-      <figure class="rv d2"><svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Commissioning and handover with the monitoring app"> <defs><linearGradient id="gw3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1F8BFF"/><stop offset="1" stop-color="#1BD45F"/></linearGradient></defs> <rect width="480" height="360" fill="#0A1E2C"/> <g stroke="#12304a" stroke-width="1"><path d="M0 90h480M0 180h480M0 270h480M120 0v360M240 0v360M360 0v360"/></g> <ellipse cx="240" cy="180" rx="200" ry="160" fill="#1BD45F" opacity=".08"/><rect x="168" y="70" width="144" height="212" rx="20" fill="#0F2A3C" stroke="#41708a" stroke-width="3"/><rect x="184" y="98" width="112" height="60" rx="8" fill="url(#gw3)" opacity=".7"/><g fill="#1BD45F" opacity=".8"><rect x="184" y="176" width="24" height="40" rx="4"/><rect x="214" y="160" width="24" height="56" rx="4"/><rect x="244" y="186" width="24" height="30" rx="4"/><rect x="274" y="146" width="22" height="70" rx="4"/></g><path d="M190 244h100" stroke="#41708a" stroke-width="5" stroke-linecap="round"/><path d="M40 300h400" stroke="#1BD45F" stroke-opacity=".4" stroke-width="2"/></svg><figcaption>Commissioning and handover</figcaption></figure>
-    </div>
   </div>
 </section>
 
@@ -735,27 +588,6 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
         <p>Most homes land between 10 and 15 kWh. Here's how to tell.</p>
         <button class="q-btn" aria-expanded="false">Read more</button>
         <div class="a"><p>Look at your evening and overnight usage rather than your total. That's the part a battery actually covers. A typical three-bedroom home uses somewhere between 8 and 14 kWh between 4pm and 7am, so a 10 to 15 kWh battery covers most nights without paying for capacity that sits idle. Going bigger makes sense if you have a pool, ducted heating, or an electric car charging at home. Going smaller can work if you just want to shave the peak. Stackable systems let you add capacity later.</p></div>
-      </article>
-      <article class="post rv">
-        <p class="date">24 July 2026</p>
-        <h3>Can you add a battery to solar you already have?</h3>
-        <p>Usually yes — and there are two ways to do it.</p>
-        <button class="q-btn" aria-expanded="false">Read more</button>
-        <div class="a"><p>If your existing inverter is healthy, an AC coupled battery sits alongside it with its own inverter. Nothing on your roof changes and the original system keeps working. If your inverter is near the end of its life, replacing it with a hybrid unit is often better value, because one box then handles both the panels and the battery. Which is cheaper over ten years depends on the age and brand of what you have now, so we check the switchboard and inverter before quoting either.</p></div>
-      </article>
-      <article class="post rv">
-        <p class="date">10 July 2026</p>
-        <h3>Running air conditioning on solar: what it really costs</h3>
-        <p>The most expensive appliance in a Melbourne home can become one of the cheapest.</p>
-        <button class="q-btn" aria-expanded="false">Read more</button>
-        <div class="a"><p>A modern split system draws roughly 1 to 2 kW while it's working hard. On a hot afternoon a 6.6 kW solar system is making far more than that, so cooling is close to free while the sun is up. The cost shows up on summer evenings and winter mornings, when the panels are quiet and the unit is still running. That's exactly the window a battery covers. It's also why sizing the air conditioner properly matters: an oversized unit short-cycles and uses more power than a right-sized one.</p></div>
-      </article>
-      <article class="post rv">
-        <p class="date">26 June 2026</p>
-        <h3>Blackout backup: what a battery can and can't do</h3>
-        <p>Most batteries switch off in an outage unless they're wired for it.</p>
-        <button class="q-btn" aria-expanded="false">Read more</button>
-        <div class="a"><p>For safety, a grid-connected system shuts down during a blackout so it can't send power into lines that someone may be working on. To keep your house running you need a backup circuit installed, which separates chosen circuits from the grid and lets the battery feed them. You choose what goes on it — usually the fridge, lights, internet and a couple of power points, rather than the whole house. Say up front that backup matters to you, because it changes both the design and the price.</p></div>
       </article>
     </div>
   </div>
@@ -936,6 +768,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
       <nav class="fnav" aria-label="Footer">
         <a href="Solar.html">Solar panels</a>
         <a href="Battery.html">Home batteries</a>
+        <a href="Inverter.html">Inverters</a>
         <a href="AirCon.html">Air conditioning</a>
         <a href="#blog">Blog</a>
         <a href="#areas">Service areas</a>
@@ -977,7 +810,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
   ]}
 }
 </script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a home battery cost in Victoria?", "acceptedAnswer": {"@type": "Answer", "text": "Installed packages start at $2,999 for a single phase SOFAR 14.98 kWh system and $3,999 for FoxESS 13.92 kWh. Final price depends on storage size, switchboard and access."}}, {"@type": "Question", "name": "Are there rebates for solar and batteries?", "acceptedAnswer": {"@type": "Answer", "text": "Federal and Victorian programs both apply and change each year. Battery Plant checks eligibility, deducts the rebate from the quote and lodges the paperwork."}}, {"@type": "Question", "name": "How long does installation take?", "acceptedAnswer": {"@type": "Answer", "text": "A battery or split system is usually one day. Solar plus battery takes one to two days."}}, {"@type": "Question", "name": "Will a battery work in a blackout?", "acceptedAnswer": {"@type": "Answer", "text": "Only if the system is set up for backup with a backup circuit wired in."}}, {"@type": "Question", "name": "Can I add a battery to solar I already have?", "acceptedAnswer": {"@type": "Answer", "text": "Usually yes. We check the inverter and switchboard, then quote an add-on battery or a hybrid replacement."}}, {"@type": "Question", "name": "How long does a battery last?", "acceptedAnswer": {"@type": "Answer", "text": "The lithium iron phosphate cells used in both ranges are rated for thousands of cycles, and come with long manufacturer warranties measured in years and throughput. We register the warranty for you at handover."}}, {"@type": "Question", "name": "Can I add more capacity later?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. SOFAR stacks in 4.99 kWh modules and FoxESS stacks too, so you can start smaller and extend, as long as the inverter has headroom. Tell us if you plan to, and we'll size the inverter for it."}}, {"@type": "Question", "name": "How many panels fit on my roof?", "acceptedAnswer": {"@type": "Answer", "text": "A 6.6 kW system is roughly 15 panels, 10 kW around 22, and 13.2 kW around 30 — the exact count depends on panel wattage and the usable roof area once you allow for vents, valleys and shading."}}, {"@type": "Question", "name": "Will solar alone cut my whole bill?", "acceptedAnswer": {"@type": "Answer", "text": "It cuts the part of the bill you use while the sun is up. If the house is empty during the day, most of the solar is exported for a small credit and bought back at peak rates later — that's the gap a battery closes."}}, {"@type": "Question", "name": "What rebates apply to solar?", "acceptedAnswer": {"@type": "Answer", "text": "Small-scale certificates are applied as a discount at the point of sale, and Victorian programs may apply on top. Amounts and eligibility change each year, so we confirm what applies to your property in writing."}}, {"@type": "Question", "name": "How long does a solar installation take?", "acceptedAnswer": {"@type": "Answer", "text": "Most rooftop systems are a one day job. Solar plus battery usually takes one to two days. Grid approval before and after the install is handled by us."}}, {"@type": "Question", "name": "Do panels need cleaning or maintenance?", "acceptedAnswer": {"@type": "Answer", "text": "Melbourne rain does most of the work. We recommend a visual check every few years, and the monitoring app will show you if output drops off unexpectedly."}}, {"@type": "Question", "name": "How much does a split system cost installed?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on capacity, how far the indoor head sits from the outdoor unit, and whether a rebate applies to your property. Tell us the room and we'll quote a fixed price including installation."}}, {"@type": "Question", "name": "Can I get a rebate on air conditioning?", "acceptedAnswer": {"@type": "Answer", "text": "Victorian Energy Upgrades can discount eligible replacements, usually where an old or inefficient system is being replaced. We check what your property qualifies for and take it off the quote."}}, {"@type": "Question", "name": "Is one big unit better than several small ones?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not. A unit sized for the room runs steadily and quietly; an oversized one cycles on and off, handles humidity poorly and costs more to run. We size room by room."}}, {"@type": "Question", "name": "Do you remove the old system?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Removal and disposal of the old unit is part of a replacement install, including recovering refrigerant properly."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a home battery cost in Victoria?", "acceptedAnswer": {"@type": "Answer", "text": "Installed packages start at $2,999 for a single phase SOFAR 14.98 kWh system and $3,999 for FoxESS 13.92 kWh. Final price depends on storage size, switchboard and access."}}, {"@type": "Question", "name": "Are there rebates for solar and batteries?", "acceptedAnswer": {"@type": "Answer", "text": "Federal and Victorian programs both apply and change each year. Battery Plant checks eligibility, deducts the rebate from the quote and lodges the paperwork."}}, {"@type": "Question", "name": "How long does installation take?", "acceptedAnswer": {"@type": "Answer", "text": "A battery or split system is usually one day. Solar plus battery takes one to two days."}}, {"@type": "Question", "name": "Will a battery work in a blackout?", "acceptedAnswer": {"@type": "Answer", "text": "Only if the system is set up for backup with a backup circuit wired in."}}, {"@type": "Question", "name": "Can I add a battery to solar I already have?", "acceptedAnswer": {"@type": "Answer", "text": "Usually yes. We check the inverter and switchboard, then quote an add-on battery or a hybrid replacement."}}]}</script>
 
 <script>
 (function(){
@@ -1007,7 +840,7 @@ footer{border-top:1px solid var(--edge);padding:2.4rem 0 7rem;font-size:.9rem;co
   } else {
     var io = new IntersectionObserver(function(es){
       es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
-    }, {threshold:.12, rootMargin:"0px 0px -50px"});
+    }, {threshold:0, rootMargin:"0px 0px 120px"});
     items.forEach(function(el){ io.observe(el); });
   }
 
